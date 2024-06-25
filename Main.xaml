@@ -101,6 +101,7 @@
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
   <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="704,1391.2" sap2010:WorkflowViewState.IdRef="SequenceX_1">
@@ -112,7 +113,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="21131a0587@gvpce.ac.in" DisplayName="Use Gmail" EmailAddress="21131a0587@gvpce.ac.in" sap:VirtualizedContainerService.HintSize="641.6,1279.2" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
+    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="21131a0587@gvpce.ac.in" DisplayName="Use Gmail" EmailAddress="21131a0587@gvpce.ac.in" sap:VirtualizedContainerService.HintSize="641.6,1302.4" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
       <umab:GmailApplicationCard.Body>
         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
           <ActivityAction.Argument>
@@ -167,7 +168,7 @@
                 <umabf:MailFilterArgument LogicalOperator="And">
                   <umabf:MailFilterArgument.Filters>
                     <scg:List x:TypeArguments="umabf:SingleMailFilterArgument" Capacity="1">
-                      <umabf:SingleMailFilterArgument DateEqualsFilter="{x:Null}" Value="{x:Null}" Criteria="Date" DateFilter="ThirtyDays" Operator="NewerThan" />
+                      <umabf:SingleMailFilterArgument DateEqualsFilter="{x:Null}" Value="{x:Null}" Criteria="Date" DateFilter="FourteenDays" Operator="NewerThan" />
                     </scg:List>
                   </umabf:MailFilterArgument.Filters>
                 </umabf:MailFilterArgument>
