@@ -140,7 +140,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <umab:SaveMailAttachmentsX Attachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="True" FolderPath="C:\Users\KLN\Downloads\Robotic-Process-Automation-main\Robotic-Process-Automation-main\Email Document Automation\outputs" sap:VirtualizedContainerService.HintSize="449.6,261.6" sap2010:WorkflowViewState.IdRef="SaveMailAttachmentsX_1" Message="[CurrentMail]" OverwriteExisting="False" />
+                    <umab:SaveMailAttachmentsX Attachments="{x:Null}" DisplayName="Save Email Attachments" ExcludeInlineAttachments="True" FolderPath="C:\Users\KLN\Documents\GitHub\rpa-email-automation\outputs" sap:VirtualizedContainerService.HintSize="449.6,261.6" sap2010:WorkflowViewState.IdRef="SaveMailAttachmentsX_1" Message="[CurrentMail]" OverwriteExisting="False" />
                     <If Condition="[CurrentMail.Body.Contains(string.Format(&quot;bot&quot;))]" sap:VirtualizedContainerService.HintSize="449.6,371.2" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
